@@ -1,0 +1,228 @@
+.Hombre {
+    display: flex;
+    flex-direction: column;
+    background-color: #004887;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    flex-wrap: wrap; 
+    min-height: 100%;
+    position: relative;
+}
+.accordion-body{
+    background-color:rgb(149, 143, 143);
+    color: black;
+}
+ 
+.negro{
+    background-color:rgb(0, 0, 0);
+    width: 35px;
+    height: 35px;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+}
+.azul{
+    background-color:rgb(38, 0, 253);
+    width: 35px;
+    height: 35px;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    
+
+}
+.rojo{
+    background-color:rgb(254, 0, 0);
+    width: 35px;
+    height: 35px;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+}
+.nueve{
+    
+    width: 30px;
+    height: 30px;
+    border-radius: 18px;
+    color: rgb(0, 0, 0);
+}
+.diez{
+    
+    width: 30px;
+    height: 30px;
+    border-radius: 18px;
+    color: rgb(0, 0, 0);
+}
+.once {
+  
+    width: 30px;
+    height: 30px;
+    border-radius: 18px;
+    color: rgb(0, 0, 0);
+}
+
+
+.ventash {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+@media screen and (max-width: 757px){
+  .ventash {display: flex;
+  flex-direction: column;}
+}
+@media (max-width:320px){
+  .ventash {display: flex;
+  flex-direction: column;}
+}
+
+.accordion {
+    width: 250px;
+    position: relative;
+    margin: 25px;
+}
+   
+.grids {
+    display: grid;
+    grid-template-columns: repeat(auto, 0fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    'box1 box2 box3'
+    'box4 box5 box6'
+    'box7 box8 box9';
+    gap: 40px;
+    margin: 30px;
+    justify-content: center;
+}
+.grids-item {
+    display: grid;
+    place-content: center;
+    border: 5px solid wheat;
+    border-radius: 10%;
+    width: 20px;
+    height: 200px;
+    
+}
+@media (max-width: 757px){
+    .grids {display: flex;
+    flex-direction: column;}
+  }
+  @media (max-width:326px){
+    .grids {display: flex;
+    flex-direction: column;}
+  }
+
+  
+.b1 {
+    grid-area: box1;
+    background-image: url(../imagenes/adizero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    background-position: center;
+    height: 200px;
+    width: 200px;
+    
+}
+    
+.b2 {
+    grid-area: box2;
+    background-image: url(../imagenes/terrex.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    background-position: center;
+    height: 200px;
+    width: 200px;
+}
+
+.b3 {    
+    grid-area: box3;
+    background-image: url(../imagenes/grandcourt.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    background-position: center;
+    height: 200px;
+    width: 200px;
+}
+
+.b4 {
+    grid-area: box4;
+    background-image: url(../imagenes/azulprimerfila.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    background-position: center;
+    height: 200px;
+    width: 200px;
+}
+
+.b5 {
+    grid-area: box5;
+    background-image: url(../imagenes/azulsegundafila.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    background-position: center;
+    height: 200px;
+    width: 200px;
+}
+
+.b6 {
+    grid-area: box6;
+    background-image: url(../imagenes/azultercerfila.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    background-position: center;
+    height: 200px;
+    width: 200px;
+}
+
+.b7 {
+    grid-area: box7;
+    background-image: url(../imagenes/rojaprimerfila.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    background-position: center;
+    height: 200px;
+    width: 200px;
+}
+
+.b8 {
+    grid-area: box8;
+    background-image: url(../imagenes/rojasegundafila.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    background-position: center;
+    height: 200px;
+    width: 200px;
+}
+
+.b9 {
+    grid-area: box9;
+    background-image: url(../imagenes/rojatercerrfila.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    background-position: center;
+    height: 200px;
+    width: 200px;
+}
+
+.grids-item button {
+    background-color:rgb(229, 207, 161);
+    color: rgb(0, 0, 0);
+    border-radius: 15px;
+    font-size: 15px;
+    padding: 5px;
+    width: 100%;
+    margin-top: 120px;
+}
+.grids-item button:hover{
+  background-color: #4d83b5;
+  transition: 0.5s;
+}

@@ -1,0 +1,215 @@
+.Mujer {
+    background-color: #5c266b;
+    flex-direction: column;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    flex-wrap: wrap; 
+    min-height: 100%;
+    position: relative;
+    
+}
+
+.categoria {
+    color: rgb(255, 255, 255);
+}
+.ventas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px));
+    grid-template-rows: auto;
+    grid-template-areas: 
+    'caja1 caja2 caja3'
+    'caja4 caja5 caja6'
+    'caja7 caja8 caja9';
+    padding: 10px;
+    gap: 40px;
+    margin: 30px;
+    justify-content: center;
+}
+
+@media screen and (max-width: 777px){
+  .box {display: flex;
+  flex-direction: column;}
+}
+
+@media (max-width: 326px){
+  .ventas {display: flex;
+  flex-direction: column;}
+}
+
+.box-item {
+        display: grid;
+        place-content: center;
+        border: 5px solid wheat; 
+        border-radius: 10%;
+        width: 200px;
+        height: 200px;
+        background-color: rgb(234, 192, 240);   
+}
+
+
+
+.c1 {
+    display: grid caja1;
+    background-image: url(../imagenes/primercalza.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    background-position: center;
+    height: 200px;
+    width: 200px;
+}
+
+.c2 {
+    display: grid caja2;
+    background-image: url(../imagenes/segundacalza.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    background-position: center;
+    height: 200px;
+    width: 200px;
+}
+
+.c3 {
+    display: grid caja3;
+    background-image: url(../imagenes/terceracalza.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    background-position: center;
+    height: 200px;
+    width: 200px;
+}
+
+.c4 {
+    display: grid caja4;
+    background-image: url(../imagenes/calzamorada.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    background-position: center;
+    height: 200px;
+    width: 200px;
+}
+
+.c5 {
+    display: grid caja5;
+    background-image: url(../imagenes/calzamorada2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    background-position: center;
+    height: 200px;
+    width: 200px;
+}
+
+.c6 {
+    display: grid caja6;
+    background-image: url(../imagenes/calzamorada3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    background-position: center;
+    height: 200px;
+    width: 200px;
+}
+
+.c7 {
+    display: grid caja7;
+    background-image: url(../imagenes/calzarosada.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    background-position: center;
+    height: 200px;
+    width: 200px;
+}
+
+.c8 {
+    display: grid caja8;
+    background-image: url(../imagenes/calzarosada2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    background-position: center;
+    height: 200px;
+    width: 200px;
+}
+
+.c9 {
+    display: grid caja9;
+    background-image: url(../imagenes/calzarosada3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    background-position: center;
+    height: 200px;
+    width: 200px;
+}
+.box-item button{
+    background-color:rgb(242, 173, 231);
+    color: rgb(0, 0, 0);
+    border-radius: 15px;
+    font-size: 15px;
+    padding: 5px;
+    width: 100%;
+    margin-top: 120px;
+}
+/* tamaño mujeres */
+.talles{
+   background-color: #7e8fd6;
+    width: 35px;
+    height: 35px;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+
+}
+.tallem{
+    background-color:rgb(235, 127, 127);
+    width: 35px;
+    height: 35px;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    
+}
+.tallel {
+    background-color:rgb(160, 241, 149);
+    width: 35px;
+    height: 35px;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+}
+/* colores mujeres */
+.negros{
+    background-color:rgb(13, 13, 13);
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+    color: rgb(255, 255, 255);
+}
+.rosado{
+    background-color:rgb(222, 82, 238);
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+}
+
+.morado{
+    background-color:rgb(100, 5, 111);
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+    color: rgb(255, 255, 255);
+
+}

@@ -12,21 +12,45 @@
   <body>
 
     <header class="header">
-      <a href="./index.html"class="Logo">Logo</a>
-      <nav class="navbar">
-        <a href="pages/Hombre.html">Hombre</a>
-        <a href="pages/Mujer.html">Mujer</a> 
-        <a href="pages/chicos.html">Chicos</a>
-        <a href="#">Chicas</a>
-        <a href="#">Outlet</a>
-        <a href="pages/iniciarsesion.html">
-        <img src="./imagenes/loguitousuario.png" alt="">
-      </a>
-     
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand me-auto" href="#">Guli</a>
+         
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Guli deportivo</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+               
+                <li class="nav-item">
+                  <a class="nav-link mx-lg-2" href="./pages/hombre.html">hombre</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-lg-2" href="./pages/mujer.html">mujer</a> 
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-lg-2" href="./pages/chicos.html">Chicos</a>
+                </li>
+               
+               
+              </ul>
+             
+            </div>
+          </div>
+          <a href="./pages/iniciarsesion.html">
+            <img src="./imagenes/loguitousuario.png" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
       </nav>
   </header>
 
     <main>
+
       <h1>Guli Deportes</h1>
 
       <section class="products">
