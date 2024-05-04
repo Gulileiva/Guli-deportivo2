@@ -44,7 +44,7 @@ html {
 }
 
 .navbar-toggler {
-  background-color: #25baeb;
+  background-color: #26a9d5;
   border-radius: 15px;
 }
 
@@ -55,12 +55,12 @@ html {
 
 .navbar-brand {
   background-color: transparent;
-  border-radius: 25px;
+  border-radius: 20px;
   color: rgb(68, 255, 255);
 }
 
 .navbar a {
-  font-size: 20px;
+  font-size: 18px;
   color: rgb(0, 0, 0);
   font-weight: 500;
   text-decoration: none;
@@ -76,7 +76,7 @@ html {
   left: 0;
   width: 0;
   height: 2px;
-  background: #fff;
+  background: #00bbff;
   transition: 0.3s;
 }
 
@@ -86,6 +86,8 @@ html {
 
 .nav-item {
   background-color: #928787;
+  border-radius: 10px;
+  margin-left: 5px;
 }
 
 .header {
@@ -358,7 +360,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  background-color: #a64c4c;
+  background-color: #ca3f3f;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -384,7 +386,7 @@ h1 {
   display: flex;
   flex-direction: column;
   width: 300px;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(85, 61, 61);
   left: 250px;
 }
 
@@ -663,7 +665,7 @@ h1 {
 .iniciasesion {
   margin: 0;
   padding: 0;
-  background: linear-gradient(150deg, #7e8fd6, #432ae7);
+  background: linear-gradient(150deg, #d69797, #1c2134);
 }
 
 .Formulario {
@@ -678,20 +680,15 @@ h1 {
 
 .Formulario h2 {
   text-align: center;
-  padding: 0 0 20px 0;
-  border-bottom: 1px solid silver;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  font-family: "poppins", sans-serif;
 }
 
 .Formulario form {
-  padding: 0 30px;
+  padding: 0 10px;
   box-sizing: border-box;
 }
 
-@media (max-width: 399px) {
-  .form {
-    text-align: left;
-  }
-}
 .Formulariousername {
   position: relative;
   border-bottom: 2px solid #adadad;
@@ -761,9 +758,36 @@ h1 {
     flex-direction: column;
   }
 }
-@media (max-width: 399px) {
-  .form {
-    text-align: left;
+@media screen and (max-width: 325px) {
+  .Formulario {
+    padding: 30px;
+    background-color: rgb(228, 82, 82);
+    width: 100%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .username {
+    display: grid;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 991px) {
+  .contraseña {
+    display: grid;
+    justify-content: center;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .recordar {
+    display: grid;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 991px) {
+  .inicias {
+    display: grid;
+    justify-content: center;
   }
 }
 

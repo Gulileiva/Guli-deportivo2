@@ -40,10 +40,30 @@
     .grids {display: flex;
     flex-direction: column;}
   }
-  @media (max-width:399px){
-    .form {
-           text-align: left;
-    
   
-    }
+  @media screen and (max-width: 325px){
+    .Formulario {padding: 30px;
+    background-color: rgb(228, 82, 82);
+  width: 100%;} 
   }
+  @media screen and (max-width: 991px){
+    .username {display: grid;
+    justify-content: center;} 
+  }
+  @media screen and (max-width: 991px){
+    .contraseña {display: grid;
+    justify-content: center;
+  width: 100%;} 
+  }
+  @media screen and (max-width: 991px){
+    .recordar {display: grid;
+    justify-content: center;} 
+  }
+  @media screen and (max-width: 991px){
+    .inicias {display: grid;
+    justify-content: center;} 
+  }
+
+  
+  
+ 

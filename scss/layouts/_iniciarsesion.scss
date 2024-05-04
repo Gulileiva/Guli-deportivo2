@@ -1,7 +1,7 @@
 .iniciasesion {
     margin: 0;
     padding: 0;
-    background: linear-gradient(150deg,#7e8fd6,#432ae7);
+    background: linear-gradient(150deg,#d69797,#1c2134);
 }
 
 .Formulario {
@@ -16,21 +16,16 @@
 
 .Formulario h2 {
     text-align: center;
-    padding: 0 0 20px 0;
-    border-bottom: 1px solid silver;
+    // padding: 0 0 20px 0;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    font-family: "poppins", sans-serif;
 }
 
 .Formulario form {
-    padding: 0 30px;
+    padding: 0 10px;
     box-sizing: border-box;
 }
-@media (max-width:399px){
-  .form {
-         text-align: left;
-  
 
-  }
-}
 
 
 .Formulariousername {

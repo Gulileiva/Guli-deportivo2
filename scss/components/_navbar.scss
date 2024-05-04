@@ -1,6 +1,6 @@
 .navbar-toggler{
   
-    background-color: #25baeb;
+    background-color: #26a9d5;
     border-radius: 15px;
     
   }
@@ -8,13 +8,15 @@
     height: 25px;
     width: 25px;
   } 
+  
+
   .navbar-brand {
       background-color:transparent;
-      border-radius: 25px;
+      border-radius: 20px;
       color: rgb(68, 255, 255);
   }
   .navbar a {
-      font-size: 20px;
+      font-size: 18px;
       color: rgb(0, 0, 0);
       font-weight: 500;
       text-decoration: none;
@@ -30,7 +32,7 @@
       left: 0;
       width: 0;
       height: 2px;
-      background:#fff;
+      background:#00bbff;
       transition: .3s;
   
   }
@@ -39,4 +41,8 @@
   }
   .nav-item {
     background-color: #928787;
+    border-radius: 10px;
+    margin-left: 5px;
+    
+    
   }
