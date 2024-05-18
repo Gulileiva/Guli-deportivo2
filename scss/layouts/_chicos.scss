@@ -1,31 +1,96 @@
 .categoriachicos {
-    background-color: #68b5c6;
+    background-color: #af4605;
     background-image: none;
 }
 
 .categoriachicos h1 {
-    color: black;
+    color: rgb(0, 0, 0);
 }
-
-
-.carousel-caption > h5 {
-    font-family: 'poppins';
-    font-size: 30px;
-}
-
-.carousel-caption > p {
-    font-family: 'poppins';
+// stock
+.encontra{
+    display: grid;
+    place-items: center;
+    background-color: rgb(255, 179, 37);
+    color: rgb(11, 11, 11);
+    border: 10px;
+    border-radius: 5px;
     font-size: 16px;
+   
+    
+   
+}
+.encontra {
+    animation: mover-izquierda-derecha 2s infinite;
+}
+@keyframes mover-izquierda-derecha{
+    from {
+        transform: translate(-10px)
+    }
+}
+// caruisel
+
+.productos {
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+    gap: 10px;
+    
 }
 
-.carousel {
-    margin: 150px 150px;
-}
-
-.carousel,
-.carousel-inner > .carousel-item > img {
-    width: 60vw;
-    height: 60vh;
-    object-fit: cover;
+.contenidos {
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    background-color: rgb(0, 0, 0);
+    left: 250px;
+    border-radius: 5px;
+}
+
+.contenidos img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+   
+}
+
+.contenidos:hover{
+    background-color: #140383;
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.contenidos-content h2, .product-content p{
+    height: 100px;
+    color:rgb(255, 255, 255);
+    text-align: center;
+    font-size: 24px;
+    width: 100%;
+}
+
+.contenidos-content{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contenidos-content a {
+    text-decoration: none;
+    background-color: aliceblue;
+    padding: 10px;
+    border: 1px solid white;
+    color: rgb(13, 13, 13);
+    font-size: 20px;  
+    width: 100%;
+    text-align: center;
+    border-radius: 15px;
+} 
+
+.contenidos-content a:hover {
+    background-color: rgb(31, 215, 235);
+    transition: 1s;
 }

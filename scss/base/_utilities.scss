@@ -1,0 +1,8 @@
+
+@mixin color($fondo, $ancho, $alto, $radio, $color){
+    background-color: $fondo;
+    width: $ancho;
+    height: $alto;
+    border-radius: $radio;
+    color: $color;
+}

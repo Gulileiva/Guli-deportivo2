@@ -36,7 +36,7 @@ html {
   background-attachment: fixed;
   color: rgb(255, 255, 255);
   width: 100%;
-  height: 250px;
+  height: 180px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -85,7 +85,7 @@ html {
 }
 
 .nav-item {
-  background-color: #928787;
+  background-color: #b6aeae;
   border-radius: 10px;
   margin-left: 5px;
 }
@@ -103,41 +103,101 @@ html {
 }
 
 .categoriachicos {
-  background-color: #68b5c6;
+  background-color: #af4605;
   background-image: none;
 }
 
 .categoriachicos h1 {
-  color: black;
+  color: rgb(0, 0, 0);
 }
 
-.carousel-caption > h5 {
-  font-family: "poppins";
-  font-size: 30px;
-}
-
-.carousel-caption > p {
-  font-family: "poppins";
+.encontra {
+  display: grid;
+  place-items: center;
+  background-color: rgb(255, 179, 37);
+  color: rgb(11, 11, 11);
+  border: 10px;
+  border-radius: 5px;
   font-size: 16px;
 }
 
-.carousel {
-  margin: 150px 150px;
+.encontra {
+  animation: mover-izquierda-derecha 2s infinite;
 }
 
-.carousel,
-.carousel-inner > .carousel-item > img {
-  width: 60vw;
-  height: 60vh;
-  object-fit: cover;
+@keyframes mover-izquierda-derecha {
+  from {
+    transform: translate(-10px);
+  }
+}
+.productos {
+  display: flex;
+  padding: 0;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.contenidos {
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  background-color: rgb(0, 0, 0);
+  left: 250px;
+  border-radius: 5px;
+}
+
+.contenidos img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.contenidos:hover {
+  background-color: #140383;
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+.contenidos-content h2, .product-content p {
+  height: 100px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 24px;
+  width: 100%;
+}
+
+.contenidos-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.contenidos-content a {
+  text-decoration: none;
+  background-color: aliceblue;
+  padding: 10px;
+  border: 1px solid white;
+  color: rgb(13, 13, 13);
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.contenidos-content a:hover {
+  background-color: rgb(31, 215, 235);
+  transition: 1s;
 }
 
 .Hombre {
   display: flex;
   flex-direction: column;
-  background-color: #004887;
-  background-repeat: no-repeat;
+  background-color: #094b84;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -151,8 +211,18 @@ html {
   color: black;
 }
 
+.calzado {
+  display: grid;
+  place-items: center;
+  background-color: rgb(59, 57, 57);
+  color: rgb(255, 255, 255);
+  border: 10px;
+  border-radius: 15px;
+  font-size: 16px;
+}
+
 .negro {
-  background-color: rgb(0, 0, 0);
+  background-color: black;
   width: 35px;
   height: 35px;
   border-radius: 20px;
@@ -203,22 +273,10 @@ html {
   justify-content: center;
 }
 
-@media screen and (max-width: 757px) {
-  .ventash {
-    display: flex;
-    flex-direction: column;
-  }
-}
-@media (max-width: 320px) {
-  .ventash {
-    display: flex;
-    flex-direction: column;
-  }
-}
 .accordion {
   width: 250px;
   position: relative;
-  margin: 25px;
+  margin: 30px;
 }
 
 .grids {
@@ -240,18 +298,6 @@ html {
   height: 200px;
 }
 
-@media (max-width: 757px) {
-  .grids {
-    display: flex;
-    flex-direction: column;
-  }
-}
-@media (max-width: 326px) {
-  .grids {
-    display: flex;
-    flex-direction: column;
-  }
-}
 .b1 {
   grid-area: box1;
   background-image: url(../imagenes/adizero.png);
@@ -360,7 +406,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  background-color: #ca3f3f;
+  background-color: #c93f3f;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -451,15 +497,34 @@ h1 {
   flex-wrap: wrap;
 }
 
+.Enviar input {
+  background-image: linear-gradient(150deg, #ff0000, rgb(255, 162, 0), #d9c284);
+  padding: 5px 5px;
+  border-radius: 10px;
+}
+
+.Enviar input:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  background-color: rgb(118, 2, 2);
+  color: rgb(255, 255, 255);
+}
+
 .post {
   flex-wrap: wrap;
   text-align: center;
+  border-radius: 15px;
+}
+
+.post input {
+  padding: 6px 6px;
+  border-radius: 15px;
 }
 
 .Mujer {
+  display: flex;
   background-color: #5c266b;
   flex-direction: column;
-  display: flex;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -471,6 +536,16 @@ h1 {
 
 .categoria {
   color: rgb(255, 255, 255);
+}
+
+.calza {
+  display: grid;
+  place-items: center;
+  background-color: rgb(62, 59, 59);
+  color: white;
+  border: 10px;
+  border-radius: 15px;
+  font-size: 16px;
 }
 
 .ventas {
@@ -491,18 +566,6 @@ h1 {
   justify-content: center;
 }
 
-@media screen and (max-width: 777px) {
-  .box {
-    display: flex;
-    flex-direction: column;
-  }
-}
-@media (max-width: 326px) {
-  .ventas {
-    display: flex;
-    flex-direction: column;
-  }
-}
 .box-item {
   display: grid;
   place-content: center;
@@ -665,7 +728,7 @@ h1 {
 .iniciasesion {
   margin: 0;
   padding: 0;
-  background: linear-gradient(150deg, #d69797, #1c2134);
+  background: linear-gradient(150deg, #058c88, #7f09ae);
 }
 
 .Formulario {
@@ -680,7 +743,7 @@ h1 {
 
 .Formulario h2 {
   text-align: center;
-  border-bottom: 1px solid rgb(0, 0, 0);
+  border-bottom: 1px solid rgb(255, 255, 255);
   font-family: "poppins", sans-serif;
 }
 
@@ -689,9 +752,26 @@ h1 {
   box-sizing: border-box;
 }
 
+.Formulario {
+  background-color: rgb(188, 105, 105);
+}
+
+.inicias input {
+  background-image: linear-gradient(150deg, #9500ff, #09f, #00ddff);
+  padding: 8px 8px;
+  border-radius: 15px;
+}
+
+.inicias input:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  background-color: rgb(118, 2, 2);
+  color: rgb(255, 255, 255);
+}
+
 .Formulariousername {
   position: relative;
-  border-bottom: 2px solid #adadad;
+  border-bottom: 2px solid #ffffff;
   margin: 30px 0;
 }
 
@@ -703,6 +783,27 @@ h1 {
   border: none;
   background: none;
   outline: none;
+}
+
+.username {
+  display: grid;
+  justify-content: center;
+}
+
+.contraseña {
+  display: grid;
+  justify-content: center;
+  width: 100%;
+}
+
+.inicias {
+  display: grid;
+  justify-content: center;
+}
+
+.recordar {
+  display: grid;
+  justify-content: center;
 }
 
 @media (max-width: 417px) {
@@ -758,10 +859,10 @@ h1 {
     flex-direction: column;
   }
 }
-@media screen and (max-width: 325px) {
+@media screen and (max-width: 450px) {
   .Formulario {
     padding: 30px;
-    background-color: rgb(228, 82, 82);
+    background-color: rgb(214, 149, 149);
     width: 100%;
   }
 }

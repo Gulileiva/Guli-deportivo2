@@ -1,12 +1,15 @@
+
 body {
+    
     display: flex;
     flex-direction: column;
-    background-color: #ca3f3f;
+    background-color: #c93f3f;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
     flex-wrap: wrap; 
     min-height: 100%;
+    
 }
 h1 {
     color: azure;
@@ -82,6 +85,7 @@ h1 {
     position: relative;
     left: 50%;
 }
+
 .suscrip {
   flex-direction: column;
   flex-wrap: wrap;
@@ -92,11 +96,32 @@ h1 {
     
     flex-wrap: wrap;
 }
-
+.Enviar input{
+    background-image: linear-gradient(
+    150deg,
+    #ff0000,
+    rgb(255, 162, 0),
+    #d9c284 
+    );
+    padding: 5px 5px;
+    border-radius: 10px; 
+}
+.Enviar input:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+    background-color: rgb(118, 2, 2);
+    color: rgb(255, 255, 255);
+}
 
 
 .post {
     flex-wrap: wrap;
     text-align: center;  
+    border-radius: 15px;
 }
+.post input  {
+    padding: 6px 6px; 
+    border-radius: 15px;
+}
+
 

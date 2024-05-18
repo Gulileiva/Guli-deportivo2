@@ -41,9 +41,9 @@
     flex-direction: column;}
   }
   
-  @media screen and (max-width: 325px){
+  @media screen and (max-width: 450px){
     .Formulario {padding: 30px;
-    background-color: rgb(228, 82, 82);
+    background-color: rgb(214, 149, 149);
   width: 100%;} 
   }
   @media screen and (max-width: 991px){
@@ -63,6 +63,11 @@
     .inicias {display: grid;
     justify-content: center;} 
   }
+  // @media screen and (max-width: 991px){
+  //   .productos {display: grid;
+  //   justify-content: center;} 
+  // }
+
 
   
   
