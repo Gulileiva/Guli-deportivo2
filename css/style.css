@@ -542,7 +542,7 @@ h1 {
   display: grid;
   place-items: center;
   background-color: rgb(62, 59, 59);
-  color: white;
+  color: rgb(255, 255, 255);
   border: 10px;
   border-radius: 15px;
   font-size: 16px;

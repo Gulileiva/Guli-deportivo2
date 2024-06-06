@@ -19,7 +19,7 @@
     display: grid;
     place-items: center;
     background-color: rgb(62, 59, 59);
-    color: white;
+    color:$colorwhite;
     border: 10px;
     border-radius: 15px;
     font-size: 16px;
@@ -198,7 +198,7 @@
     width: 40px;
     height: 40px;
     border-radius: 25px;
-    color: rgb(255, 255, 255);
+    color:$colorwhite;
 }
 .rosado{
     background-color:rgb(222, 82, 238);
@@ -212,6 +212,6 @@
     width: 40px;
     height: 40px;
     border-radius: 25px;
-    color: rgb(255, 255, 255);
+    color:$colorwhite;
 
 }
